@@ -12,7 +12,7 @@ categories = params['categories']
 data_path = os.path.join('data', 'prepared')
 os.makedirs(data_path, exist_ok=True)
 
-#fetch data
+#fetchdata
 newsgroups_train = fetch_20newsgroups(subset='train', categories=categories)
 newsgroups_test = fetch_20newsgroups(subset='test', categories=categories)
 
